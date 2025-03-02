@@ -1,0 +1,92 @@
+[
+   {
+     "id": 1,
+     "img": "",
+     "category": "Dried Fruits",
+     "item_name": "Mixed Nuts Berries Pack",
+     "rating": 4.5,
+     "previous_price": 6.00,
+     "current_price": 4.60
+   },
+   {
+     "id": 2,
+     "img": "",
+     "category": "Cookies",
+     "item_name": "Multi Grain Combo Cookies",
+     "rating": 4.5,
+     "previous_price": 3.00,
+     "current_price": 2.50
+   },
+   {
+     "id": 3,
+     "img": "",
+     "category": "Foods",
+     "item_name": "Fresh Mango Juice Pack",
+     "rating": 4.5,
+     "previous_price": 5.00,
+     "current_price": 4.00
+   },
+   {
+     "id": 4,
+     "img": "",
+     "category": "Dried Fruits",
+     "item_name": "Dates Value Fresh Pouch",
+     "rating": 4.5,
+     "previous_price": 8.00,
+     "current_price": 7.80
+   },
+   {
+     "id": 5,
+     "img": "",
+     "category": "Foods",
+     "item_name": "Stick Fiber Masala Magic",
+     "rating": 4.5,
+     "previous_price": 5.00,
+     "current_price": 4.60
+   },
+   {
+     "id": 6,
+     "img": "",
+     "category": "Dried Fruits",
+     "item_name": "Natural Hub Cherry Karonda",
+     "rating": 4.5,
+     "previous_price": 5.00,
+     "current_price": 4.00
+   },
+   {
+     "id": 7,
+     "img": "",
+     "category": "Foods",
+     "item_name": "Mango Juice Pack",
+     "rating": 4.5,
+     "previous_price": 3.20,
+     "current_price": 2.00
+   },
+   {
+     "id": 8,
+     "img": "",
+     "category": "Tubers",
+     "item_name": "Organic Ginger Pack",
+     "rating": 4.5,
+     "previous_price": 4.20,
+     "current_price": 2.00
+   },
+   {
+     "id": 9,
+     "img": "",
+     "category": "Foods",
+     "item_name": "Enjoy Hub Cherry Karonda",
+     "rating": 4.5,
+     "previous_price": 5.00,
+     "current_price": 4.00
+   },
+   {
+     "id": 10,
+     "img": "",
+     "category": "Fresh Fruit",
+     "item_name": "Fresh Mango Juice Pack",
+     "rating": 4.5,
+     "previous_price": 3.20,
+     "current_price": 2.00
+   }
+ ]

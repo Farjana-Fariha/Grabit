@@ -1,0 +1,47 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+.section-container{
+   max-width: 1600px;
+   margin: 0 auto;
+   padding-left: clamp(2px,1vw,12px);
+   padding-right: clamp(2px,1vw,12px);
+}
+.section-gap{
+   margin-top: clamp(10px,5vw,42px);
+   margin-bottom: clamp(10px,5vw,42px);
+}
+
+/* common font styles */
+h1,h2,h3,h4,h5,h6{
+   font-family: "Manrope", serif;
+   color: #4B5966;
+}
+p, input, li, button{
+   font-family: "Poppins", serif;
+}
+.primary-bg{
+   background-color: #5CAF90;
+}
+.primary-color{
+   color: #5CAF90;
+}
+.t-hue-dark{
+   color: #4B5966;
+}
+.t-hue-base{
+   color: #777777;
+}
+.t-hue-light{
+   color: #999999;
+}
+select.select {
+   appearance: none !important;
+   background-image: none !important;
+   padding: 0 !important;
+ }

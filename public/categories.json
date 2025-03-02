@@ -1,0 +1,38 @@
+[
+   {
+     "id": 1,
+     "icon": "apple",
+     "category_name": "Fruits",
+     "quantity": 320
+   },
+   {
+     "id": 2,
+     "icon": "corn",
+     "category_name": "Vegetables",
+     "quantity": 548
+   },
+   {
+     "id": 3,
+     "icon": "milk-jug",
+     "category_name": "Dairy & Milk",
+     "quantity": 48
+   },
+   {
+     "id": 4,
+     "icon": "snack-bowl",
+     "category_name": "Snack & Spice",
+     "quantity": 59
+   },
+   {
+     "id": 5,
+     "icon": "juice-glass",
+     "category_name": "Juice & Drinks",
+     "quantity": 845
+   },
+   {
+     "id": 6,
+     "icon": "juice-glass",
+     "category_name": "Juice & Drinks",
+     "quantity": 845
+   }
+ ]
