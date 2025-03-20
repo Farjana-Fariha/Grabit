@@ -1,7 +1,7 @@
 const Category = ({ category }) => {
   return (
-    <div className="section-gap bg-[#E2FDE2] bg-gradient-to-t from-white via-white/100 to-transparent max-w-[246px] max-h-[170px] rounded-md p-[15px]">
-      <div className="w-[216px] flex flex-col items-center bg-white py-[25px] rounded-md relative drop-shadow-sm">
+    <div className="bg-[#E2FDE2] bg-gradient-to-t from-white via-white/100 to-transparent rounded-md p-[15px]">
+      <div className="xl:w-[216px] lg:w-[190px] w-[160px] flex flex-col items-center bg-white xl:py-[25px] lg:py-[20px] md:py-[16px] py-[10px] rounded-md relative drop-shadow-sm">
         {/* corner tag */}
         <div className="absolute top-0 right-0 primary-bg rounded-tr-md rounded-bl-md">
           <p className="text-[12px] font-semibold tracking-[0.32px] text-white leading-[1.5] px-[5px]">

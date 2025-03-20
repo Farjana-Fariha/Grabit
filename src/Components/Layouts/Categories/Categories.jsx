@@ -11,13 +11,12 @@ const Categories = () => {
     };
     fetchData();
   }, []);
-  console.log(categories);
   return (
-   <div className="section-container section-gap flex flex-wrap gap-x-5 ">
+   <section className="section-container section-gap flex flex-wrap justify-center gap-x-5 ">
       {
          categories.map((category) => <Category></Category>)
       }
-   </div>
+   </section>
   );
 };
 

@@ -5,12 +5,15 @@
 @plugin "daisyui";
 
 
-
+section,header{
+      padding-left: clamp(2px,1vw,12px);
+   padding-right: clamp(2px,1vw,12px);
+}
 .section-container{
    max-width: 1600px;
    margin: 0 auto;
-   padding-left: clamp(2px,1vw,12px);
-   padding-right: clamp(2px,1vw,12px);
+   /* padding-left: clamp(2px,1vw,12px);
+   padding-right: clamp(2px,1vw,12px); */
 }
 .section-gap{
    margin-top: clamp(10px,5vw,42px);
@@ -22,7 +25,7 @@ h1,h2,h3,h4,h5,h6{
    font-family: "Manrope", serif;
    color: #4B5966;
 }
-p, input, li, button{
+p, input, li, button, Link, a{
    font-family: "Poppins", serif;
 }
 .primary-bg{

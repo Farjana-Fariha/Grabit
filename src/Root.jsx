@@ -8,7 +8,7 @@ const Root = () => {
       <div className=' leading-[1.5]'>
          <Header></Header>
          <Outlet></Outlet>
-         <BottomNav></BottomNav>
+         {/* <BottomNav></BottomNav> */}
       </div>
    );
 };

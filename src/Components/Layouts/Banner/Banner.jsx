@@ -5,16 +5,16 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 const Banner = () => {
   const bgImg = BannerImg;
   return (
-    <div className="newapp section-container section-gap max-w-full  bg-cover bg-center bg-no-repeat rounded-sm" style={{ backgroundImage: `url(${bgImg})` }}>
+    <section className="section-container section-gap max-w-full  bg-cover bg-center bg-no-repeat rounded-sm" style={{ backgroundImage: `url(${bgImg})` }}>
       {/* Banner content */}
       <div
-        className="max-w-[clamp(170px, 7.512rem + 15.56vw, 419px)] pl-[clamp(10px,2vw,100px)] py-[clamp(70px,10vw,172px)] "
+        className=" pl-[clamp(10px,2vw,100px)] py-[clamp(70px,10vw,180px)] lg:max-w-[450px] md:max-w-[300px] max-w-[160px]"
         
       >
         <p className=" leading-[1] tracking-[0.8px] text-[clamp(6px,3vw,20px)] primary-color font-medium">
           Starting at <span className=" font-bold"> $ 29.99</span>
         </p>
-        <h2 className="capitalize leading-[1.23] text-[clamp(14px,5vw,55px)] t-hue-dark font-bold pt-[clamp(16px,2vw,22px) pb-[clamp(20px,2vw,30px)]">
+        <h2 className="capitalize leading-[1.23] text-[clamp(14px,5vw,55px)] t-hue-dark font-bold pt-[clamp(16px,2vw,22px) pb-[clamp(20px,2vw,40px)]">
           Explore fresh & juicy fruits
         </h2>
         <button
@@ -25,7 +25,7 @@ const Banner = () => {
           <MdKeyboardDoubleArrowRight className="text-[clamp(6px,3vw,18px)]" />{" "}
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

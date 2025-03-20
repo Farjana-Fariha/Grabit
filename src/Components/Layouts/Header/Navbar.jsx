@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const Navbar = ({ order }) => {
+const Navbar = () => {
   return (
     <div className="">
       <nav>

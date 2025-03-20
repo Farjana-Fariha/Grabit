@@ -1,0 +1,22 @@
+[
+   {
+      "title": "Free Shipping",
+      "description": "Free shipping on all US order or order above $200",
+      "icon": "truck"
+    },
+    {
+      "title": "24/7 Support",
+      "description": "Contact us 24 hours a day, 7 days a week",
+      "icon": "sprout"
+    },
+    {
+      "title": "30 Days Return",
+      "description": "Simply return it within 30 days for an exchange",
+      "icon": "refresh"
+    },
+    {
+      "title": "Payment Secure",
+      "description": "Contact us 24 hours a day, 7 days a week",
+      "icon": "dollar"
+    }
+]
