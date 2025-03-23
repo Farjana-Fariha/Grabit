@@ -11,7 +11,7 @@ const HeaderMid = () => {
   return (
     <div className="section-container flex items-center justify-between lg:py-7 md:py-3 py-1">
       {/* Logo */}
-      <div className="xl:max-w-36 lg:max-w-32 md:max-w-28 max-w-20 max-h-7">
+      <div className="xl:max-w-36 lg:max-w-32 md:max-w-28 max-w-20">
         <img className=" w-full h-full" src={Logo} alt="logo" />
       </div>
       {/* Searchbar */}

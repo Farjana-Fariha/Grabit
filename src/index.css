@@ -5,7 +5,7 @@
 @plugin "daisyui";
 
 
-section,header{
+section,header,footer{
       padding-left: clamp(2px,1vw,12px);
    padding-right: clamp(2px,1vw,12px);
 }
