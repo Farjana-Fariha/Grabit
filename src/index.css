@@ -16,8 +16,8 @@ section,header{
    padding-right: clamp(2px,1vw,12px); */
 }
 .section-gap{
-   margin-top: clamp(10px,5vw,42px);
-   margin-bottom: clamp(10px,5vw,42px);
+   padding-top: clamp(10px,5vw,42px);
+   padding-bottom: clamp(10px,5vw,42px);
 }
 
 /* common font styles */

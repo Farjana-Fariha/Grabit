@@ -6,6 +6,7 @@ import Discount from '../Components/Layouts/Discount/Discount';
 import NewArrival from '../Components/Layouts/NewArrival/NewArrival';
 import TasteHealthBanner from '../Components/Layouts/TasteHealthBanner/TasteHealthBanner';
 import FreeShipping from '../Components/Layouts/FreeShipping/FreeShipping';
+import Blog from '../Components/Layouts/Blog/Blog';
 
 const Home = () => {
    return (
@@ -17,6 +18,7 @@ const Home = () => {
          <NewArrival></NewArrival>
          <TasteHealthBanner></TasteHealthBanner>
          <FreeShipping></FreeShipping>
+         <Blog></Blog>
       </div>
    );
 };

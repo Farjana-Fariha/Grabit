@@ -19,7 +19,7 @@ const HeaderMid = () => {
         <input
           type="text"
           placeholder="Search Products..."
-          className=" grow w-full md:p-4 p-3 md:pr-10 pr-10 shadow-xs border border-gray-100 rounded text-[clamp(10px,2vw,13px)] font-semibold tracking-[0.6px] focus:outline-none focus:ring-1 focus:ring-blue-400 "
+          className=" grow w-full md:p-4 p-3 md:pr-10 pr-10 shadow-xs border border-[#EEEEEE] rounded text-[clamp(10px,2vw,13px)] font-semibold tracking-[0.6px] focus:outline-none focus:ring-1 focus:ring-blue-400 "
         />
         <button className="absolute right-4 md:top-5 top-3">
           <img src={searchIcon} alt="search" />

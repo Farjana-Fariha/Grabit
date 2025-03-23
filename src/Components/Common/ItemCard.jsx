@@ -6,13 +6,13 @@ const ItemCard = ({itemData}) => {
   const [category] = itemData;
   // console.log(category)
   return (
-    <div className="lg:max-w-[298px] md:max-w-[274px] max-w-[224px] border border-gray-100 rounded-md">
+    <div className="lg:max-w-[298px] md:max-w-[274px] max-w-[224px] border border-[#EEEEEE] rounded-md">
       <div className="w-full flex justify-center items-center">
         <img className="w-full block" src={Item} alt="Items-img" />
       </div>
       {/* items content */}
-      <div className="border border-gray-100 p-[clamp(10px,2vw,20px)] space-y-[clamp(6px,1vw,10.5px)]">
-        <h4 className="t-hue-light text-[clamp(12nppx,2vw,13px)] font-normal leading-[1.2] tracking-[0.16px]">
+      <div className="border border-[#EEEEEE] p-[clamp(10px,2vw,20px)] space-y-[clamp(6px,1vw,10.5px)]">
+        <h4 className="t-hue-light text-[clamp(12px,2vw,13px)] font-normal leading-[1.2] tracking-[0.16px]">
           Dried Fruits
         </h4>
         <p className="t-hue-dark text-[clamp(14px,2vw,14px)] font-normal leading-[1.2] tracking-[0.16px]">

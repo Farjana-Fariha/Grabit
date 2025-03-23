@@ -3,7 +3,7 @@ import React from 'react';
 const ShippingCard = ({itemData}) => {
 const {title, description} = itemData;
    return (
-      <div className="flex-1 flex flex-col items-center text-center bg-white p-8 rounded-md relative drop-shadow-sm">
+      <div className="flex-1 flex flex-col items-center text-center bg-white p-8 rounded-md relative border border-[#EEEEEE] ">
   
       {/* category Icon */}
       <div className=" w-10">

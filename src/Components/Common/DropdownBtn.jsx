@@ -18,7 +18,7 @@ const DropdownBtn = () => {
          <IoIosArrowDown className="text-[24px] ms-auto ps-1" />
       </button>
       {isOpen && (
-        <ul className=" absolute md:min-w-50 min-w-35  capitalize border border-gray-200 rounded-md bg-white cursor-pointer">
+        <ul className=" absolute md:min-w-50 min-w-35  capitalize border border-[#EEEEEE] rounded-md bg-white cursor-pointer">
           <li className=" text-center md:py-3 py-1 text-[clamp(12px,2vw,15px)] tracking-wider leading-[22px] hover:bg-gray-100 ">category 1</li>
           <li className=" text-center md:py-3 py-1 text-[clamp(12px,2vw,15px)] tracking-wider leading-[22px] hover:bg-gray-100 ">category 2</li>
           <li className=" text-center md:py-3 py-1 text-[clamp(12px,2vw,15px)] tracking-wider leading-[22px] hover:bg-gray-100 ">category 3</li>
