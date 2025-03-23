@@ -3,6 +3,7 @@ import Logo from "../../assets/logo.png";
 import badge1 from "../../assets/Footer/android-badge.png";
 import badge2 from "../../assets/Footer/apple-badge.png";
 import { Link } from "react-router-dom";
+import FooterBottom from "./FooterBottom/FooterBottom";
 
 const Footer = () => {
   return (
@@ -171,6 +172,9 @@ const Footer = () => {
           </nav>
         </div>
       </div>
+   <div className="bg-[#F8F8FB]">
+   <FooterBottom></FooterBottom>
+   </div>
     </footer>
   );
 };
