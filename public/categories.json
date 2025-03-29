@@ -1,38 +1,51 @@
 [
    {
      "id": 1,
-     "icon": "apple",
+     "icon": "CategoryImg/category-1.svg",
      "category_name": "Fruits",
+     "tag": "10%",
      "quantity": 320
    },
    {
      "id": 2,
-     "icon": "corn",
+     "icon": "CategoryImg/category-2.svg",
      "category_name": "Vegetables",
+     "tag": "15%",
      "quantity": 548
    },
    {
      "id": 3,
-     "icon": "milk-jug",
+     "icon": "CategoryImg/category-3.svg",
      "category_name": "Dairy & Milk",
+     "tag": "18%",
      "quantity": 48
    },
    {
      "id": 4,
-     "icon": "snack-bowl",
+     "icon":"CategoryImg/category-4.svg",
      "category_name": "Snack & Spice",
+     "tag": "20%",
      "quantity": 59
    },
    {
      "id": 5,
-     "icon": "juice-glass",
+     "icon": "CategoryImg/category-5.svg",
      "category_name": "Juice & Drinks",
+     "tag": "",
      "quantity": 845
    },
    {
      "id": 6,
-     "icon": "juice-glass",
+     "icon": "CategoryImg/category-1.svg",
      "category_name": "Juice & Drinks",
+     "tag": "25%",
      "quantity": 845
-   }
+   },
+   {
+    "id": 7,
+    "icon": "CategoryImg/category-1.svg",
+    "category_name": "Juice & Drinks",
+    "tag": "30%",
+    "quantity": 845
+  }
  ]
