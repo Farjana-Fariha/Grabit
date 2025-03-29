@@ -11,7 +11,7 @@ section,header,footer{
 }
 .section-container{
    max-width: 1600px;
-   margin: 0 auto;
+   margin: auto;
    /* padding-left: clamp(2px,1vw,12px);
    padding-right: clamp(2px,1vw,12px); */
 }

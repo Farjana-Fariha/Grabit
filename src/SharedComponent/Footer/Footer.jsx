@@ -172,7 +172,7 @@ const Footer = () => {
           </nav>
         </div>
       </div>
-   <div className="bg-[#F8F8FB]">
+   <div className="bg-[#F8F8FB] border border-y-[#EEEEEE] border-x-0">
    <FooterBottom></FooterBottom>
    </div>
     </footer>

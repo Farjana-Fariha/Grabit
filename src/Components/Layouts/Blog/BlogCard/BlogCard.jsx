@@ -1,14 +1,14 @@
 import React from 'react';
-import img from '../../../../assets/Blog/blog-1.png'
+// import img from '../../../../assets/Blog/blog-1.png'
 import { Link } from 'react-router-dom';
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const BlogCard = ({itemData}) => {
-   const {date, category, title, description} = itemData
+   const {date, category, title, description , image} = itemData
    return (
       <div className="flex-1 mb-5">
          <div className="w-full flex justify-center items-center ">
-           <img className="w-full block rounded-md" src={img} alt="Items-img" />
+           <img className="w-full block rounded-md" src={image} alt="Items-img" />
          </div>
          {/* items content */}
          <div className="">

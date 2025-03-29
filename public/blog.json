@@ -2,26 +2,31 @@
    {
      "date": "June 30, 2022",
      "category": "Organic",
-     "description": "MARKETING GUIDE: 5 Steps to Success the way."
+     "description": "MARKETING GUIDE: 5 Steps to Success the way.",
+     "image": "Blog/blog-1.png"
    },
    {
      "date": "April 02, 2022",
      "category": "Fruits",
-     "description": "Best way to solve business deal issue in market."
+     "description": "Best way to solve business deal issue in market.",
+     "image": "Blog/blog-1.png"
    },
    {
      "date": "Mar 09, 2022",
      "category": "Vegetables",
-     "description": "31 grocery customer service stats to know in 2019."
+     "description": "31 grocery customer service stats to know in 2019.",
+     "image": "Blog/blog-1.png"
    },
    {
      "date": "January 25, 2022",
      "category": "Fastfood",
-     "description": "Business ideas to grow your business traffic."
+     "description": "Business ideas to grow your business traffic.",
+     "image": "Blog/blog-1.png"
    },
    {
      "date": "December 10, 2021",
      "category": "Fruits",
-     "description": "MARKETING GUIDE: 5 Steps to Success."
+     "description": "MARKETING GUIDE: 5 Steps to Success.",
+     "image": "Blog/blog-1.png"
    }
  ]
