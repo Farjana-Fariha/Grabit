@@ -1,0 +1,74 @@
+[
+   {
+     "id": 1,
+     "img": "healthy_nutmix_200g_pack.jpg",
+     "title": "Healthy Nutmix, 200g Pack",
+     "category": "Driedfruit",
+     "current_price": 42.00,
+     "previous_price": 45.00
+   },
+   {
+     "id": 2,
+     "img": "ginger_organic.jpg",
+     "title": "Ginger - Organic",
+     "category": "Vegetables",
+     "current_price": 62.00,
+     "previous_price": 65.00
+   },
+   {
+     "id": 3,
+     "img": "lemon_seedless.jpg",
+     "title": "Lemon - Seedless",
+     "category": "Vegetables",
+     "current_price": 42.00,
+     "previous_price": 45.00
+   },
+   {
+     "id": 4,
+     "img": "organic_fresh_tomato.jpg",
+     "title": "Organic Fresh Tomato",
+     "category": "Vegetables",
+     "current_price": 25.00,
+     "previous_price": 30.00
+   },
+   {
+     "id": 5,
+     "img": "dates_value_pouch.jpg",
+     "title": "Dates Value Pouch Dates Value Po...",
+     "category": "Driedfruit",
+     "current_price": 56.00,
+     "previous_price": 78.00
+   },
+   {
+     "id": 6,
+     "img": "mango_kesar.jpg",
+     "title": "Mango - Kesar",
+     "category": "Fruits",
+     "current_price": 62.00,
+     "previous_price": 65.00
+   },
+   {
+     "id": 7,
+     "img": "coffee_with_chocolate_cream_mix.jpg",
+     "title": "Coffee With Chocolate Cream Mix ...",
+     "category": "Coffee",
+     "current_price": 62.00,
+     "previous_price": 65.00
+   },
+   {
+     "id": 8,
+     "img": "blue_berry.jpg",
+     "title": "Blue Berry",
+     "category": "Fruits",
+     "current_price": 25.00,
+     "previous_price": 30.00
+   },
+   {
+     "id": 9,
+     "img": "mixed_nuts_almonds_dry_fruits.jpg",
+     "title": "Mixed Nuts & Almonds Dry Fruits",
+     "category": "Driedfruit",
+     "current_price": 9.00,
+     "previous_price": 11.00
+   }
+ ]

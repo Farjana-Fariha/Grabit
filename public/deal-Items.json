@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "img": "Items/item1.png",
+    "category": "Dried Fruits",
+    "item_name": "Mixed Nuts Berries Pack",
+    "rating": 4.5,
+    "previous_price": 6.00,
+    "current_price": 4.60,
+    "imgOptions": ["Items/item1.png", "Items/item2.png","Items/item3.png", "Items/item4.png"]
+  },
+  {
+    "id": 2,
+    "img": "Items/item2.png",
+    "category": "Cookies",
+    "item_name": "Multi Grain Combo Cookies",
+    "rating": 4.5,
+    "previous_price": 3.00,
+    "current_price": 2.50,
+    "imgOptions": ["Items/item1.png", "Items/item2.png","Items/item3.png", "Items/item4.png"]
+  },
+  {
+    "id": 3,
+    "img": "Items/item3.png",
+    "category": "Foods",
+    "item_name": "Fresh Mango Juice Pack",
+    "rating": 4.5,
+    "previous_price": 5.00,
+    "current_price": 4.00,
+    "imgOptions": ["Items/item1.png", "Items/item2.png","Items/item3.png", "Items/item4.png"]
+  },
+  {
+    "id": 4,
+    "img": "Items/item4.png",
+    "category": "Dried Fruits",
+    "item_name": "Dates Value Fresh Pouch",
+    "rating": 4.5,
+    "previous_price": 8.00,
+    "current_price": 7.80,
+    "imgOptions": ["Items/item1.png", "Items/item2.png","Items/item3.png", "Items/item4.png"]
+  },
+  {
+    "id": 5,
+    "img": "Items/item5.png",
+    "category": "Foods",
+    "item_name": "Stick Fiber Masala Magic",
+    "rating": 4.5,
+    "previous_price": 5.00,
+    "current_price": 4.60,
+    "imgOptions": ["Items/item1.png", "Items/item2.png","Items/item3.png", "Items/item4.png"]
+  },
+  {
+    "id": 6,
+    "img": "Items/item6.png",
+    "category": "Dried Fruits",
+    "item_name": "Natural Hub Cherry Karonda",
+    "rating": 4.5,
+    "previous_price": 5.00,
+    "current_price": 4.00,
+    "imgOptions": ["Items/item1.png", "Items/item2.png","Items/item3.png", "Items/item4.png"]
+  },
+  {
+    "id": 7,
+    "img": "Items/item7.png",
+    "category": "Foods",
+    "item_name": "Mango Juice Pack",
+    "rating": 4.5,
+    "previous_price": 3.20,
+    "current_price": 2.00,
+    "imgOptions": ["Items/item1.png", "Items/item2.png","Items/item3.png", "Items/item4.png"]
+  },
+  {
+    "id": 8,
+    "img": "Items/item8.png",
+    "category": "Tubers",
+    "item_name": "Organic Ginger Pack",
+    "rating": 4.5,
+    "previous_price": 4.20,
+    "current_price": 2.00,
+    "imgOptions": ["Items/item1.png", "Items/item2.png","Items/item3.png", "Items/item4.png"]
+  },
+  {
+    "id": 9,
+    "img": "Items/item9.png",
+    "category": "Foods",
+    "item_name": "Enjoy Hub Cherry Karonda",
+    "rating": 4.5,
+    "previous_price": 5.00,
+    "current_price": 4.00,
+    "imgOptions": ["Items/item1.png", "Items/item2.png","Items/item3.png", "Items/item4.png"]
+  },
+  {
+    "id": 10,
+    "img": "Items/item10.png",
+    "category": "Fresh Fruit",
+    "item_name": "Fresh Mango Juice Pack",
+    "rating": 4.5,
+    "previous_price": 3.20,
+    "current_price": 2.00,
+    "imgOptions": ["Items/item1.png", "Items/item2.png","Items/item3.png", "Items/item4.png"]
+  }
+]

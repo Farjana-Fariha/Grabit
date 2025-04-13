@@ -1,22 +1,23 @@
 import React from "react";
 import Item from "../../assets/Items/item1.jpg";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ItemCard = ({itemData}) => {
-  const [category] = itemData;
-  // console.log(category)
+  const {id, img, category, item_name, rating, previous_price, current_price} = itemData;
   return (
-    <div className="lg:max-w-[298px] md:max-w-[274px] max-w-[224px] border border-[#EEEEEE] rounded-md">
+    <Link to={`/product-page/${id}`}>
+          <div className="lg:max-w-[298px] md:max-w-[274px] max-w-[224px] border border-[#EEEEEE] rounded-md">
       <div className="w-full flex justify-center items-center">
-        <img className="w-full block" src={Item} alt="Items-img" />
+        <img className="w-full block" src={img} alt="Items-img" />
       </div>
       {/* items content */}
       <div className="border border-[#EEEEEE] p-[clamp(10px,2vw,20px)] space-y-[clamp(6px,1vw,10.5px)]">
         <h4 className="t-hue-light text-[clamp(12px,2vw,13px)] font-normal leading-[1.2] tracking-[0.16px]">
-          Dried Fruits
+          {category}
         </h4>
         <p className="t-hue-dark text-[clamp(14px,2vw,14px)] font-normal leading-[1.2] tracking-[0.16px]">
-          Mixed Nuts Berries Pack
+          {item_name}
         </p>
         <ul className="flex gap-x-1">
           <li>
@@ -39,11 +40,12 @@ const ItemCard = ({itemData}) => {
           </li>
         </ul>
         <p className="t-hue-dark text-[clamp(14px,2vw,14px)] font-bold leading-[1.5] tracking-[0.32px]">
-          $45.00{" "}
-          <del className="t-hue-base font-normal ps-[6.64px]">$56.00</del>
+          ${current_price}
+          <del className="t-hue-base font-normal ps-[6.64px]">${previous_price}</del>
         </p>
       </div>
     </div>
+    </Link>
   );
 };
 

@@ -7,6 +7,7 @@ import NewArrival from '../Components/Layouts/NewArrival/NewArrival';
 import TasteHealthBanner from '../Components/Layouts/TasteHealthBanner/TasteHealthBanner';
 import FreeShipping from '../Components/Layouts/FreeShipping/FreeShipping';
 import Blog from '../Components/Layouts/Blog/Blog';
+import TopProducts from '../Components/Layouts/TopProducts/TopProducts';
 
 const Home = () => {
    return (
@@ -18,6 +19,7 @@ const Home = () => {
          <NewArrival></NewArrival>
          <TasteHealthBanner></TasteHealthBanner>
          <FreeShipping></FreeShipping>
+         <TopProducts></TopProducts>
          <Blog></Blog>
       </div>
    );

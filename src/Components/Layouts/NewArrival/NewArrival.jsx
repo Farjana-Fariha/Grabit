@@ -6,7 +6,7 @@ const NewArrival = () => {
      const [items, setItems] = useState([]);
      useEffect(() => {
        const fetchData = async () => {
-         const response = await fetch("/itemData.json");
+         const response = await fetch("/arrival-items.json");
          const data = await response.json();
          setItems(data);
        };
@@ -21,7 +21,7 @@ const NewArrival = () => {
         {/* showing Items */}
         <div className="deal-items-container grid justify-center xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-[24px]">
           {items.map((item) => (
-            <ItemCard key={item.id} itemData={items}></ItemCard>
+            <ItemCard key={item.id} itemData={item}></ItemCard>
           ))}
         </div>
       </div>
