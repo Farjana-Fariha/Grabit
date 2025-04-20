@@ -40,12 +40,5 @@
      "category_name": "Juice & Drinks",
      "tag": "25%",
      "quantity": 845
-   },
-   {
-    "id": 7,
-    "icon": "CategoryImg/category-1.svg",
-    "category_name": "Juice & Drinks",
-    "tag": "30%",
-    "quantity": 845
-  }
+   }
  ]

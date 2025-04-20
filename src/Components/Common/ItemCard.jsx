@@ -1,5 +1,4 @@
 import React from "react";
-import Item from "../../assets/Items/item1.jpg";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
