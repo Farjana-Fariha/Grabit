@@ -10,15 +10,15 @@ const ProductPageTab = () => {
      { name: "Reviews", content: "This is the content for the Reviews tab." },
    ];
    return (
-<div className="tabs-box">
+<div className="tabs-box bg-white">
       {/* Tab Navigation */}
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 bg-white">
         {tabData.map((tab) => (
           <label key={tab.name}>
             <input
               type="radio"
-              name="unique_tab_group_1"
-              className="hidden" 
+              name="unique_tab_group_1" // Unique name for this tab group
+              className="hidden" // Hide the radio input
               checked={activeTab === tab.name}
               onChange={() => setActiveTab(tab.name)}
             />

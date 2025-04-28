@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SectionTitle from "../../Common/SectionTitle";
 import ItemCard from "../../Common/ItemCard";
 import DealTimer from "../DealTimer/DealTimer";
+import './Deal.css'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

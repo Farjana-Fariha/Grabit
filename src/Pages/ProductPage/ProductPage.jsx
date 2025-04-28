@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import ProductPageTab from "./ProductPageTab/ProductPageTab";
+import AddToCart from "./AddToCart/AddToCart";
+
 import { FaStar } from "react-icons/fa";
-import { LuPlus } from "react-icons/lu";
-import { LuMinus } from "react-icons/lu";
-import { FaRegHeart } from "react-icons/fa";
-import { FaRegEye } from "react-icons/fa";
+
 
 import Img from "../../assets/use.png";
 import optionImg_1 from "../../assets/use.png";
@@ -18,7 +18,6 @@ import optionImg_4 from "../../assets/item4.png";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import ProductPageTab from "../../Components/Layouts/ProductPageTab/ProductPageTab";
 
 // import required modules
 // import { FreeMode, Pagination } from "swiper/modules";
@@ -238,30 +237,7 @@ const ProductPage = () => {
               </div>
             </div>
             {/* Add to card area */}
-            <div className="addToCard-wrapper mt-10 flex items-center gap-[10px]">
-              <div className="quantity-btn flex font-medium leading-[2.4] border border-[#EEEEEE] rounded-md">
-                <div className="increament px-[16px] flex items-center text-[#212529]">
-                  {" "}
-                  <LuPlus></LuPlus>{" "}
-                </div>
-                <div className="quantity-display px-[15px] t-hue-dark">1</div>
-                <div className="decreament px-[16px] flex items-center text-[#212529]">
-                  {" "}
-                  <LuMinus></LuMinus>{" "}
-                </div>
-              </div>
-              <button className="addToCard-btn uppercase font-semibold text-[14px] leading-[3] tracking-[0.32px] text-white bg-[#4B5966] px-[32px] py-0  rounded-md">
-                Add to card
-              </button>
-              <button className="p-[12px] border border-[#EEEEEE] rounded-md">
-                {" "}
-                <FaRegHeart></FaRegHeart>
-              </button>
-              <button className="p-[12px] border border-[#EEEEEE] rounded-md">
-                {" "}
-                <FaRegEye></FaRegEye>{" "}
-              </button>
-            </div>
+         <AddToCart></AddToCart>
           </div>
         </div>
         <div className="product-page-tab mt-10">

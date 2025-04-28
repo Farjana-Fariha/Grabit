@@ -1,0 +1,10 @@
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+   transition: 200ms transform, 200ms left;
+   width: 30px;
+   height: 15px;
+   border-radius: 30px;
+   background: #4B5966;
+}
+.swiper-pagination-bullet swiper-pagination-bullet-active-prev{
+   border-radius: 100%;
+}

@@ -1,74 +1,48 @@
 import React, { useEffect, useState } from "react";
 
 const DealTimer = () => {
-   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [mins, setMins] = useState(0);
+  const [secs, setSecs] = useState(0);
+  useEffect(()=>{
+    const countdown = () => {
+      setInterval(function(){
+        let curr = new Date().getTime();
+        let dest = new Date('june 12, 2025, 10:00:00').getTime();
+        let diff = dest - curr;
+        let days = Math.floor(diff/(1000*60*60*24));
+        let hours = Math.floor(diff % (1000*60*60*24) / (1000 * 60 * 60));
+        let mins = Math.floor(diff % (1000*60*60) / (1000 * 60));
+        let secs = Math.floor(diff % (1000*60) / (1000));
 
-   function calculateTimeLeft() {
-     const targetDate = new Date();
-     targetDate.setDate(targetDate.getDate() + 25);
- 
-     const difference = +targetDate - +new Date();
-     let timeLeft = {};
- 
-     if (difference > 0) {
-       timeLeft = {
-         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-         minutes: Math.floor((difference / 1000 / 60) % 60),
-         seconds: Math.floor((difference / 1000) % 60),
-       };
-     } else {
-       timeLeft = {
-         days: 0,
-         hours: 0,
-         minutes: 0,
-         seconds: 0,
-       };
+        // Update the States 
+        setDays(days);
+        setHours(hours);
+        setMins(mins);
+        setSecs(secs);
+      },1000)
+      return () => clearInterval(interval)
      }
-     return timeLeft;
-   }
- 
-   useEffect(() => {
-     const timer = setInterval(() => {
-       setTimeLeft(calculateTimeLeft());
-     }, 1000);
- 
-     // Cleanup interval on component unmount
-     return () => clearInterval(timer);
-   }, []);
- 
-   const formatTime = (value) => (value < 10 ? `0${value}` : value);
- 
-   // Check if timeLeft is defined before rendering
-   if (!timeLeft || Object.keys(timeLeft).length === 0) {
-     return <div className="bg-[#F8F8FB]"><p>Time's up!</p></div>;
-   }
+  countdown()
+  },[])
+
   return (
-    <div className="">
-      <div className=" bg-[#F8F8FB]"><p>{timeLeft.days} <span>Days</span> {timeLeft.hours} : {timeLeft.minutes} : {timeLeft.seconds} </p></div>
+    <div className="max-w-[190px]">
+      <div className=" w-full bg-[#F8F8FB] flex px-4 py-2 gap-2">
+        <p className="text-[15px] font-semibold leading-[1.86] t-hue-dark ">{days}</p>
+        <p className="text-[14px] font-normal leading-[2] tracking-[0.32px] t-hue-dark " >Days</p>
+        <p className="text-[15px] font-semibold leading-[1.86] t-hue-dark ">{hours} :</p>
+        <p className="text-[15px] font-semibold leading-[1.86] t-hue-dark ">{mins} :</p>
+        <p className="text-[15px] font-semibold leading-[1.86] t-hue-dark ">{secs}</p>
+
+      </div>
     </div>
   );
 };
 
 export default DealTimer;
 
-/* 25 */
 
-// position: absolute;
-// width: 18.59px;
-// height: 28px;
-// left: 15px;
-// top: 5px;
-
-// font-family: 'Poppins';
-// font-style: normal;
-// font-weight: 600;
-// font-size: 15px;
-// line-height: 28px;
-// /* identical to box height, or 187% */
-// display: flex;
-// align-items: center;
-
-// color: #4B5966;
 
 

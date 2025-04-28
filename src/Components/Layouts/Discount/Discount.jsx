@@ -6,8 +6,9 @@ const Discount = () => {
   const bgImg = BackgroundImg;
   return (
     <section className="discount-area">
+      <div className="section-container section-gap">
       <div
-        className="section-container section-gap max-w-full  bg-cover bg-center bg-no-repeat rounded-sm flex flex-col items-end lg:py-20 md:py-10 py-5"
+        className=" max-w-full  bg-cover bg-center bg-no-repeat rounded-sm flex flex-col items-end lg:py-20 md:py-10 py-5"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
         <div className="discount-content  lg:max-w-[425px] md:max-w-[374px] max-w-[190px] text-end xl:mr-[90px] lg:mr-[40px] md:mr-[20px] mr-[10px]">
@@ -22,6 +23,8 @@ const Discount = () => {
           <CommonBtn></CommonBtn>
         </div>
       </div>
+      </div>
+    
     </section>
   );
 };
