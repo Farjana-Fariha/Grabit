@@ -5,9 +5,13 @@
     background: white;
     border: 1px solid black;
 
-   /* transition: 200ms transform, 200ms left;
-    width: 30px;
-    height: 15px;
-    border-radius: 30px;
-    background: #4B5966; */
+ 
+}
+
+.swiper-wrapper{
+   padding-bottom: 40px;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+   bottom: var(--swiper-pagination-bottom, 0px);
+
 }

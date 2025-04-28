@@ -1,92 +1,142 @@
 [
-   {
-     "id": 1,
-     "img": "Items/item1.png",
-     "category": "Dried Fruits",
-     "item_name": "Mixed Nuts Berries Pack",
-     "rating": 4.5,
-     "previous_price": 6.00,
-     "current_price": 4.60
-   },
-   {
-     "id": 2,
-     "img": "Items/item2.png",
-     "category": "Cookies",
-     "item_name": "Multi Grain Combo Cookies",
-     "rating": 4.5,
-     "previous_price": 3.00,
-     "current_price": 2.50
-   },
-   {
-     "id": 3,
-     "img": "Items/item3.png",
-     "category": "Foods",
-     "item_name": "Fresh Mango Juice Pack",
-     "rating": 4.5,
-     "previous_price": 5.00,
-     "current_price": 4.00
-   },
-   {
-     "id": 4,
-     "img": "Items/item4.png",
-     "category": "Dried Fruits",
-     "item_name": "Dates Value Fresh Pouch",
-     "rating": 4.5,
-     "previous_price": 8.00,
-     "current_price": 7.80
-   },
-   {
-     "id": 5,
-     "img": "Items/item5.png",
-     "category": "Foods",
-     "item_name": "Stick Fiber Masala Magic",
-     "rating": 4.5,
-     "previous_price": 5.00,
-     "current_price": 4.60
-   },
-   {
-     "id": 6,
-     "img": "Items/item6.png",
-     "category": "Dried Fruits",
-     "item_name": "Natural Hub Cherry Karonda",
-     "rating": 4.5,
-     "previous_price": 5.00,
-     "current_price": 4.00
-   },
-   {
-     "id": 7,
-     "img": "Items/item7.png",
-     "category": "Foods",
-     "item_name": "Mango Juice Pack",
-     "rating": 4.5,
-     "previous_price": 3.20,
-     "current_price": 2.00
-   },
-   {
-     "id": 8,
-     "img": "Items/item8.png",
-     "category": "Tubers",
-     "item_name": "Organic Ginger Pack",
-     "rating": 4.5,
-     "previous_price": 4.20,
-     "current_price": 2.00
-   },
-   {
-     "id": 9,
-     "img": "Items/item9.png",
-     "category": "Foods",
-     "item_name": "Enjoy Hub Cherry Karonda",
-     "rating": 4.5,
-     "previous_price": 5.00,
-     "current_price": 4.00
-   },
-   {
-     "id": 10,
-     "img": "Items/item10.png",
-     "category": "Fresh Fruit",
-     "item_name": "Fresh Mango Juice Pack",
-     "rating": 4.5,
-     "previous_price": 3.20,
-     "current_price": 2.00
-   }
- ]
+  {
+    "id": 1,
+    "img": "Items/item1.png",
+    "category": "Dried Fruits",
+    "item_name": "Mixed Nuts Berries Pack",
+    "rating": 4.5,
+    "previous_price": 6.00,
+    "current_price": 4.60,
+    "discount": "23.33%",
+    "imgOptions": ["Items/item1.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
+    "stock": "in stock",
+    "description": "Premium mixed nuts and berries pack, nutritious and delicious. Perfect for healthy snacking. Natural ingredients, no artificial flavors. Buy now for a tasty treat!",
+    "weight": ["1kg", "2kg", "3kg"]
+  },
+  {
+    "id": 2,
+    "img": "Items/item2.png",
+    "category": "Cookies",
+    "item_name": "Multi Grain Combo Cookies",
+    "rating": 4.5,
+    "previous_price": 3.00,
+    "current_price": 2.50,
+    "discount": "16.67%",
+    "imgOptions": ["Items/item1.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
+    "stock": "in stock",
+    "description": "Multi-grain combo cookies, crispy and healthy. Made with natural ingredients, perfect with tea or coffee. Nutritious snack for any time. Order now!",
+    "weight": ["1kg", "2kg", "3kg"]
+  },
+  {
+    "id": 3,
+    "img": "Items/item3.png",
+    "category": "Foods",
+    "item_name": "Fresh Mango Juice Pack",
+    "rating": 4,
+    "previous_price": 5.00,
+    "current_price": 4.00,
+    "discount": "20.00%",
+    "imgOptions": ["Items/item1.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
+    "stock": "out of stock",
+    "description": "Fresh mango juice pack, bursting with flavor and nutrition. No artificial flavors. Ideal for summer refreshment. Order now to enjoy pure mango goodness!",
+    "weight": ["1kg", "2kg", "3kg"]
+  },
+  {
+    "id": 4,
+    "img": "Items/item4.png",
+    "category": "Dried Fruits",
+    "item_name": "Dates Value Fresh Pouch",
+    "rating": 4.5,
+    "previous_price": 8.00,
+    "current_price": 7.80,
+    "discount": "2.50%",
+    "imgOptions": ["Items/item1.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
+    "stock": "in stock",
+    "description": "Fresh dates pouch, sweet and nutritious. Natural energy source, perfect for healthy snacking. High-quality dates, no preservatives. Buy now for a delicious treat!",
+    "weight": ["1kg", "2kg", "3kg"]
+  },
+  {
+    "id": 5,
+    "img": "Items/item5.png",
+    "category": "Foods",
+    "item_name": "Stick Fiber Masala Magic",
+    "rating": 4.5,
+    "previous_price": 5.00,
+    "current_price": 4.60,
+    "discount": "8.00%",
+    "imgOptions": ["Items/item1.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
+    "stock": "in stock",
+    "description": "Stick fiber masala magic, spicy and crunchy. High-fiber snack, perfect for on-the-go. Natural ingredients, no artificial additives. Order now for a flavorful experience!",
+    "weight": ["1kg", "2kg", "3kg"]
+  },
+  {
+    "id": 6,
+    "img": "Items/item6.png",
+    "category": "Dried Fruits",
+    "item_name": "Natural Hub Cherry Karonda",
+    "rating": 4.5,
+    "previous_price": 5.00,
+    "current_price": 4.00,
+    "discount": "20.00%",
+    "imgOptions": ["Items/item1.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
+    "stock": "in stock",
+    "description": "Natural hub cherry karonda, tangy and nutritious. Perfect for healthy snacking. Packed with vitamins, no artificial flavors. Buy now for a unique taste!",
+    "weight": ["1kg", "2kg", "3kg"]
+  },
+  {
+    "id": 7,
+    "img": "Items/item7.png",
+    "category": "Foods",
+    "item_name": "Mango Juice Pack",
+    "rating": 4.5,
+    "previous_price": 3.20,
+    "current_price": 2.00,
+    "discount": "37.50%",
+    "imgOptions": ["Items/item1.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
+    "stock": "out of stock",
+    "description": "Mango juice pack, rich in flavor and refreshment. Made from fresh mangoes, no artificial sweeteners. Perfect for all ages. Order now for pure bliss!",
+    "weight": ["1kg", "2kg", "3kg"]
+  },
+  {
+    "id": 8,
+    "img": "Items/item8.png",
+    "category": "Tubers",
+    "item_name": "Organic Ginger Pack",
+    "rating": 4.5,
+    "previous_price": 4.20,
+    "current_price": 2.00,
+    "discount": "52.38%",
+    "imgOptions": ["Items/item1.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
+    "stock": "in stock",
+    "description": "Organic ginger pack, fresh and aromatic. Perfect for cooking and health benefits. No pesticides, pure quality. Buy now to enhance your culinary experience!",
+    "weight": ["1kg", "2kg", "3kg"]
+  },
+  {
+    "id": 9,
+    "img": "Items/item9.png",
+    "category": "Foods",
+    "item_name": "Enjoy Hub Cherry Karonda",
+    "rating": 4.5,
+    "previous_price": 5.00,
+    "current_price": 4.00,
+    "discount": "20.00%",
+    "imgOptions": ["Items/item1.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
+    "stock": "in stock",
+    "description": "Enjoy hub cherry karonda, tangy and delicious. Packed with nutrients, ideal for snacking. Natural ingredients, no preservatives. Order now for a healthy treat!",
+    "weight": ["1kg", "2kg", "3kg"]
+  },
+  {
+    "id": 10,
+    "img": "Items/item10.png",
+    "category": "Fresh Fruit",
+    "item_name": "Fresh Mango Juice Pack",
+    "rating": 4.5,
+    "previous_price": 3.20,
+    "current_price": 2.00,
+    "discount": "37.50%",
+    "imgOptions": ["Items/item1.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
+    "stock": "in stock",
+    "description": "Fresh mango juice pack, pure and refreshing. Made from ripe mangoes, no artificial flavors. Perfect for daily hydration. Buy now for tropical enjoyment!",
+    "weight": ["1kg", "2kg", "3kg"]
+  }
+]

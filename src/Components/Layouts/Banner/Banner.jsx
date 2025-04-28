@@ -2,6 +2,7 @@
 import BannerImg from "../../../assets/Banner.png";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
+import './Banner.css'
 
 // Import Swiper styles
 import "swiper/css";
