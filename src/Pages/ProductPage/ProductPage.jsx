@@ -3,19 +3,14 @@ import ProductPageTab from "./ProductPageTab/ProductPageTab";
 import AddToCart from "./AddToCart/AddToCart";
 
 import { FaStar } from "react-icons/fa";
-
-import Img from "../../assets/use.png";
-import optionImg_1 from "../../assets/use.png";
-import optionImg_2 from "../../assets/item1.png";
-import optionImg_3 from "../../assets/item2.png";
-import optionImg_4 from "../../assets/item4.png";
 import { useParams } from "react-router-dom";
 import WeightBtn from "./WeightBtn/WeightBtn";
+import ProductShowcase from "./ProductShowcase/ProductShowcase";
 
 const ProductPage = () => {
-  const [currentImg, setCurrentImg] = useState(Img);
-  // get spacific data
   const [item, setItem] = useState([]);
+  const [currentImg, setCurrentImg] = useState(null);
+  // get spacific data
   const { id } = useParams();
   useEffect(() => {
     const fetchData = async () => {
@@ -23,6 +18,7 @@ const ProductPage = () => {
         const response = await fetch("/arrival-items.json");
         const data = await response.json();
         const item = data.find((item) => item.id == id);
+        setCurrentImg(item.imgOptions[0])
         setItem(item);
       } catch (err) {
         console.log("Can not fatch data", err);
@@ -30,119 +26,17 @@ const ProductPage = () => {
     };
     fetchData();
   }, [id]);
-
   // Function to update the image
   const showOptionImg = (img) => {
     setCurrentImg(img);
   };
-  // Function for weight
-  // ওজন নির্বাচনের ফাংশন
-  const weightBtn = (weight) => {
-    setSelectedWeight(weight);
-    console.log("Selected weight:", weight); // ডিবাগিং
-  };
+  // console.log(item.imgOptions)
   return (
     <section className="product-area">
       <div className="section-container section-gap">
         <div className="section-wrapper">
           <div className="description-wrapper flex gap-x-[24px]">
-            <div className="product-showcase p-4 border border-[#EEEEEE] rounded-md">
-              <div className="">
-                <img
-                  id="showing-img"
-                  className="showing-img w-full"
-                  src={currentImg}
-                  alt="product-img"
-                />
-              </div>
-              <ul className="img-options-wrapper flex gap-[22px]">
-                {/* <Swiper
-                slidesPerView={4}
-                spaceBetween={22}
-                freeMode={true}
-                pagination={{
-                  clickable: true,
-                }}
-                modules={[FreeMode, Pagination]}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                  <div className=" w-[168px]">
-                    <img
-                      onMouseOver={() => showOptionImg(optionImg_1)}
-                      className=" w-full border border-[#5caf9100] hover:border-[#5CAF90] rounded-md"
-                      src={optionImg_1}
-                      alt="option_img"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className=" w-[168px]">
-                    <img
-                      onMouseOver={() => showOptionImg(optionImg_1)}
-                      className=" w-full border border-[#5caf9100] hover:border-[#5CAF90] rounded-md"
-                      src={optionImg_1}
-                      alt="option_img"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className=" w-[168px]">
-                    <img
-                      onMouseOver={() => showOptionImg(optionImg_1)}
-                      className=" w-full border border-[#5caf9100] hover:border-[#5CAF90] rounded-md"
-                      src={optionImg_1}
-                      alt="option_img"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className=" w-[168px]">
-                    <img
-                      onMouseOver={() => showOptionImg(optionImg_1)}
-                      className=" w-full border border-[#5caf9100] hover:border-[#5CAF90] rounded-md"
-                      src={optionImg_1}
-                      alt="option_img"
-                    />
-                  </div>
-                </SwiperSlide>
-        
-              </Swiper> */}
-
-                <li className=" w-[168px]">
-                  <img
-                    onMouseOver={() => showOptionImg(optionImg_1)}
-                    className=" w-full border border-[#5caf9100] hover:border-[#5CAF90] rounded-md"
-                    src={optionImg_1}
-                    alt="option_img"
-                  />
-                </li>
-                <li>
-                  <img
-                    onMouseOver={() => showOptionImg(optionImg_2)}
-                    className=" w-[168px] border border-[#5caf9100] hover:border-[#5CAF90] rounded-md"
-                    src={optionImg_2}
-                    alt="option_img"
-                  />
-                </li>
-                <li>
-                  <img
-                    onMouseOver={() => showOptionImg(optionImg_3)}
-                    className=" w-[168px] border border-[#5caf9100] hover:border-[#5CAF90] rounded-md"
-                    src={optionImg_3}
-                    alt="option_img"
-                  />
-                </li>
-                <li>
-                  <img
-                    onMouseOver={() => showOptionImg(optionImg_4)}
-                    className=" w-[168px] border border-[#5caf9100] hover:border-[#5CAF90] rounded-md"
-                    src={optionImg_4}
-                    alt="option_img"
-                  />
-                </li>
-              </ul>
-            </div>
+            <ProductShowcase currentImg={currentImg} imgOptions={item.imgOptions}></ProductShowcase>
             <div className="product-desc pr-46">
               <p className="font-medium text-[22px] t-hue-dark leading-[1.59] tracking-[0.32px]">
                 {item.item_name}
@@ -169,21 +63,6 @@ const ProductPage = () => {
                   ) : (
                     <p>No rating available</p>
                   )}
-                  {/* <li>
-                    <FaStar className="w-3 text-[#F27D0C]"></FaStar>
-                  </li>
-                  <li>
-                    <FaStar className="w-3 text-[#F27D0C]"></FaStar>
-                  </li>
-                  <li>
-                    <FaStar className="w-3 text-[#F27D0C]"></FaStar>
-                  </li>
-                  <li>
-                    <FaStar className="w-3 text-[#F27D0C]"></FaStar>
-                  </li>
-                  <li>
-                    <FaStar className="w-3 text-[#F27D0C]"></FaStar>
-                  </li> */}
                 </ul>
 
                 <p className="font-normal text-[14px] t-hue-light leading-[1.42] tracking-[0.32px]">
