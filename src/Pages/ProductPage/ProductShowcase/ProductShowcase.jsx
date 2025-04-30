@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductShowcase = ({currentImg, imgOptions}) => {
+const ProductShowcase = ({currentImg, imgOptions, showOptionImg}) => {
 
    return (
      <div className="product-showcase p-4 border border-[#EEEEEE] rounded-md">

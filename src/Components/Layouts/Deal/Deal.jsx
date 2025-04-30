@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SectionTitle from "../../Common/SectionTitle";
 import ItemCard from "../../Common/ItemCard";
-import DealTimer from "../DealTimer/DealTimer";
 import './Deal.css'
 
 // Import Swiper React components
@@ -14,6 +13,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
+import DealTimer from "./DealTimer/DealTimer";
 
 const Deal = () => {
   const [items, setItems] = useState([]);

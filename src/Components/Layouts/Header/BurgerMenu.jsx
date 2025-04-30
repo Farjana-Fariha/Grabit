@@ -24,7 +24,7 @@ const BurgerMenu = () => {
            <nav>
                 <ul className="capitalize ">
                   <li>
-                    <NavLink className=" leading-4 tracking-wider t-hue-dark text-[15px] font-medium">
+                    <NavLink to={'/'} className=" leading-4 tracking-wider t-hue-dark text-[15px] font-medium">
                       Home
                     </NavLink>
                   </li>

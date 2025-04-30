@@ -1,19 +1,21 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../../../assets/logo.png";
 import searchIcon from "../../../assets/Nav-icons/search.svg";
 import Icon1 from "../../../assets/Nav-icons/Icon1.svg";
 import Icon2 from "../../../assets/Nav-icons/Icon2.svg";
 import Icon3 from "../../../assets/Nav-icons/Icon3.svg";
 import BurgerMenu from "./BurgerMenu";
+import { getCartData } from "../../../Utility/locoalStorage";
 
 const HeaderMid = () => {
+  const cartData = getCartData();
 
   return (
     <div className="section-container flex items-center justify-between lg:py-7 md:py-3 py-1">
       {/* Logo */}
-      <div className="xl:max-w-36 lg:max-w-32 md:max-w-28 max-w-20">
+      <Link to={'/'} className="xl:max-w-36 lg:max-w-32 md:max-w-28 max-w-20">
         <img className=" w-full h-full" src={Logo} alt="logo" />
-      </div>
+      </Link>
       {/* Searchbar */}
       <div className="relative w-full xl:max-w-[640px] lg:max-w-[460px] md:max-w-[440px] max-w-[200px] ms-2">
         <input
@@ -51,14 +53,14 @@ const HeaderMid = () => {
             </p>
           </span>
         </NavLink>
-        <NavLink className="flex items-center gap-x-[10px] ">
+        <NavLink to={'/cart'} className="flex items-center gap-x-[10px] ">
           <img className="md:w-6 w-4" src={Icon3} alt="icon" />
           <span className="">
             <p className=" text-xs t-hue-base font-medium tracking-widest leading-4">
               Cart
             </p>
             <p className=" text-[clamp(8px,2vw,13px)] t-hue-dark font-semibold tracking-[0.32px] leading-5">
-              <span className=" font-bold">3</span>-Items
+              <span className=" font-bold">{cartData.length}</span>-Items
             </p>
           </span>
         </NavLink>

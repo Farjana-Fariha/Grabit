@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ProductPageTab from "./ProductPageTab/ProductPageTab";
 import AddToCart from "./AddToCart/AddToCart";
-
+import { ToastContainer, toast } from 'react-toastify';
 import { FaStar } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import WeightBtn from "./WeightBtn/WeightBtn";
@@ -30,13 +30,12 @@ const ProductPage = () => {
   const showOptionImg = (img) => {
     setCurrentImg(img);
   };
-  // console.log(item.imgOptions)
   return (
     <section className="product-area">
       <div className="section-container section-gap">
         <div className="section-wrapper">
           <div className="description-wrapper flex gap-x-[24px]">
-            <ProductShowcase currentImg={currentImg} imgOptions={item.imgOptions}></ProductShowcase>
+            <ProductShowcase currentImg={currentImg} imgOptions={item.imgOptions} showOptionImg={showOptionImg}></ProductShowcase>
             <div className="product-desc pr-46">
               <p className="font-medium text-[22px] t-hue-dark leading-[1.59] tracking-[0.32px]">
                 {item.item_name}
@@ -123,7 +122,7 @@ const ProductPage = () => {
               <WeightBtn btns={item.weight}></WeightBtn>
 
               {/* Add to card area */}
-              <AddToCart></AddToCart>
+              <AddToCart id={id} toast={toast}></AddToCart>
             </div>
           </div>
           <div className="product-page-tab mt-10">
@@ -131,6 +130,7 @@ const ProductPage = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 };
