@@ -7,7 +7,7 @@ const Cart = () => {
   const [items, setItems] = useState([]);
   useEffect(() => {
     const allCartDataAsStr = getCartData();
-    let allCartData = allCartDataAsStr.map(str => parseInt(str))
+    let allCartData = allCartDataAsStr.map(str => parseInt(str.id));
     const fetchData = async () => {
       try {
         const response = await fetch("/arrival-items.json");

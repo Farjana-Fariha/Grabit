@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import { LuPlus } from "react-icons/lu";
 import { LuMinus } from "react-icons/lu";
+import {  useContext } from "react";
+import { AllDataContext } from "../../../../Root";
 
 const Cart_quantity = ({item}) => {
-   const [quantity, setQuantity] = useState(1)
+  const {itemId, itemQuantity} = useContext(AllDataContext)
+
+   const [quantity, setQuantity] = useState((item.id == itemId ? itemQuantity : 1))
+  //  (item.id == itemId ? console.log(itemQuantity) : console.log(itemQuantity))
+  //  console.log('cart quantity', cartQuantity)
+   
    const handleIncreament = () => {
       setQuantity(quantity + 1);
     };

@@ -21,13 +21,13 @@ const AddToCart = ({ id, toast }) => {
   // Add to Cart
   const handleAddToCart = (currId) => {
     const allCartId = getCartData();
-    const exist = allCartId.find((id) => id == currId);
+    const exist = allCartId.find((item) => item.id == currId);
     if (!exist) {
       toast("Added to Cart");
     } else {
       toast("Already added to Cart");
     }
-    saveCartData(currId);
+    saveCartData(currId,quantity);
   };
   return (
     <div className="addToCart mt-10 flex items-center gap-[10px]">
@@ -49,7 +49,7 @@ const AddToCart = ({ id, toast }) => {
       <button
         onClick={() => {
           handleAddToCart(id);
-          getCartQuantity();
+          getCartQuantity(id,quantity);
         }}
         className="addToCard-btn uppercase font-semibold text-[14px] leading-[3] tracking-[0.32px] text-white bg-[#4B5966] px-[32px] py-0  rounded-md"
       >

@@ -8,15 +8,19 @@ import Footer from "./SharedComponent/Footer/Footer";
 export const AllDataContext = createContext(null);
 
 const Root = () => {
-  // Data to show cart quantity
-  const [cartQuantity, setCartQuantity] = useState(getCartData().length)
-  let getCartQuantity = () => {
-    setCartQuantity(getCartData().length)
+  const [cartQuantity, setCartQuantity] = useState(getCartData().length);
+  const [itemQuantity, setItemQuantity] = useState(0);
+  const [itemId, setItemId] = useState(null)
+  // Data to show item quantity
+  let getCartQuantity = (itemId,itemQuantity) => {
+    setCartQuantity(getCartData().length);
+    setItemQuantity(itemQuantity);
+    setItemId(itemId);
 
   };
   return (
     <div className=" leading-[1.5]">
-      <AllDataContext.Provider value={{cartQuantity, getCartQuantity}}>
+      <AllDataContext.Provider value={{cartQuantity, getCartQuantity, itemQuantity, itemId}}>
         <Header></Header>
         <Outlet></Outlet>
         {/* <BottomNav></BottomNav> */}
