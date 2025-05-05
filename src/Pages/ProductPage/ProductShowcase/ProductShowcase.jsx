@@ -15,8 +15,8 @@ const ProductShowcase = ({currentImg, imgOptions, showOptionImg}) => {
                    <ul className="img-options-wrapper flex gap-[22px]">
                      {
                        (imgOptions && Array.isArray(imgOptions) ? (
-                        imgOptions.map(img=>(
-                         <li className=" w-[168px]">
+                        imgOptions.map((img,index)=>(
+                         <li key={index} className=" w-[168px]">
                          <img
                            onMouseOver={() => showOptionImg(img)}
                            className=" w-full border border-[#5caf9100] hover:border-[#5CAF90] rounded-md"

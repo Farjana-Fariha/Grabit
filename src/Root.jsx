@@ -1,23 +1,27 @@
-import React, { createContext } from "react";
+import React, { createContext,useState } from "react";
 import { Outlet } from "react-router-dom";
+import { getCartData } from "./Utility/locoalStorage.js";
 import Header from "./Components/Layouts/Header/Header";
 import Footer from "./SharedComponent/Footer/Footer";
 
 // Creating Context
-export const CartDataContext = createContext(null);
+export const AllDataContext = createContext(null);
 
 const Root = () => {
-  let getCartId = (id) => {
-    console.log("from root", id);
+  // Data to show cart quantity
+  const [cartQuantity, setCartQuantity] = useState(getCartData().length)
+  let getCartQuantity = () => {
+    setCartQuantity(getCartData().length)
+
   };
   return (
     <div className=" leading-[1.5]">
-      <CartDataContext.Provider value={{ getCartId }}>
+      <AllDataContext.Provider value={{cartQuantity, getCartQuantity}}>
         <Header></Header>
         <Outlet></Outlet>
         {/* <BottomNav></BottomNav> */}
         <Footer></Footer>
-      </CartDataContext.Provider>
+      </AllDataContext.Provider>
     </div>
   );
 };
