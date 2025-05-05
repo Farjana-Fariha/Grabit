@@ -1,0 +1,36 @@
+import React, { useState } from "react";
+import { LuPlus } from "react-icons/lu";
+import { LuMinus } from "react-icons/lu";
+
+const Cart_quantity = ({item}) => {
+   const [quantity, setQuantity] = useState(1)
+   const handleIncreament = () => {
+      setQuantity(quantity + 1);
+    };
+    const handledecreament = () => {
+      if (quantity > 1) {
+         setQuantity(quantity - 1)
+      }
+    };
+   return (
+            <div className="quantity-btn w-[84px] h-[35px] flex items-center justify-around font-medium leading-[2.4] border border-[#EEEEEE] rounded-md">
+                     <div
+                       onClick={()=> handleIncreament()}
+                       className="increament cursor-pointer text-[#212529]"
+                     >
+                       <span className="font-normal text-[16px] leading-[1.5] t-hue-dark"><LuPlus></LuPlus></span>
+                     </div>
+                     <div className="quantity-display font-semibold text-[14px] leading-[2.7] t-hue-dark">
+                       {quantity}
+                     </div>
+                     <div
+                       onClick={()=> handledecreament()}
+                       className="decreament flex items-center text-[#212529]"
+                     >
+                      <span className="font-normal text-[16px] leading-[1.5] t-hue-dark"> <LuMinus></LuMinus></span>
+                     </div>
+                   </div>
+   );
+};
+
+export default Cart_quantity;

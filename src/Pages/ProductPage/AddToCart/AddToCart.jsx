@@ -1,11 +1,24 @@
-import React, { useState } from 'react';
+import { useContext, useState } from 'react';
 import { LuPlus } from "react-icons/lu";
 import { LuMinus } from "react-icons/lu";
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
 import { getCartData, saveCartData } from '../../../Utility/locoalStorage';
+import { CartDataContext } from '../../../Root';
+// import { getCartIddddd } from '../../../Root';
+// import { CartDataContext } from '../../../Root';
+
+
 
 const AddToCart = ({id, toast}) => {
+  const {getCartId} = useContext(CartDataContext)
+
+getCartId(id)
+
+
+
+
+
   // Handle Increament and Decreament
   let [quantity, setQuantity] = useState(1);
   const handleIncreament = () => {
@@ -18,6 +31,7 @@ const AddToCart = ({id, toast}) => {
   }
   // Add to Cart
   const handleAddToCart = (currId) => {
+    // getCartIddddd(currId)
     const allCartId = getCartData()
     const exist = allCartId.find(id => id == currId);
     console.log(exist)
@@ -40,7 +54,10 @@ const AddToCart = ({id, toast}) => {
           <LuMinus></LuMinus>
         </div>
       </div>
-      <button onClick={()=> handleAddToCart(id)} className="addToCard-btn uppercase font-semibold text-[14px] leading-[3] tracking-[0.32px] text-white bg-[#4B5966] px-[32px] py-0  rounded-md">
+      <button onClick={()=> {
+        handleAddToCart(id);
+        // getCartIddddd(id)
+      }} className="addToCard-btn uppercase font-semibold text-[14px] leading-[3] tracking-[0.32px] text-white bg-[#4B5966] px-[32px] py-0  rounded-md">
         Add to card
       </button>
       <button className="p-[12px] border border-[#EEEEEE] rounded-md">

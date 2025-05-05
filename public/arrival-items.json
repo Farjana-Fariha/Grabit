@@ -11,7 +11,7 @@
     "imgOptions": ["Items/item1.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
     "stock": "in stock",
     "description": "Premium mixed nuts and berries pack, nutritious and delicious. Perfect for healthy snacking. Natural ingredients, no artificial flavors. Buy now for a tasty treat!",
-    "weight": ["1kg", "2kg", "3kg"]
+    "weight": ["1kg", "2kg", "3kg","5kg"]
   },
   {
     "id": 2,
@@ -39,7 +39,7 @@
     "imgOptions": ["Items/item3.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
     "stock": "out of stock",
     "description": "Fresh mango juice pack, bursting with flavor and nutrition. No artificial flavors. Ideal for summer refreshment. Order now to enjoy pure mango goodness!",
-    "weight": ["1kg", "2kg", "3kg"]
+    "weight": ["1kg", "2kg", "3kg","4kg","5kg"]
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
     "imgOptions": ["Items/item4.png", "Items/item2.png", "Items/item3.png", "Items/item4.png"],
     "stock": "in stock",
     "description": "Fresh dates pouch, sweet and nutritious. Natural energy source, perfect for healthy snacking. High-quality dates, no preservatives. Buy now for a delicious treat!",
-    "weight": ["1kg", "2kg", "3kg"]
+    "weight": ["1kg", "2kg", "3kg","3.5kg"]
   },
   {
     "id": 5,

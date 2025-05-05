@@ -6,9 +6,15 @@ import Icon2 from "../../../assets/Nav-icons/Icon2.svg";
 import Icon3 from "../../../assets/Nav-icons/Icon3.svg";
 import BurgerMenu from "./BurgerMenu";
 import { getCartData } from "../../../Utility/locoalStorage";
+import { useEffect, useState } from "react";
 
 const HeaderMid = () => {
   const cartData = getCartData();
+
+  const [cart, setCart] = useState([])
+  useEffect(()=>{
+    setCart(cartData)
+  },cartData)
 
   return (
     <div className="section-container flex items-center justify-between lg:py-7 md:py-3 py-1">
@@ -60,7 +66,7 @@ const HeaderMid = () => {
               Cart
             </p>
             <p className=" text-[clamp(8px,2vw,13px)] t-hue-dark font-semibold tracking-[0.32px] leading-5">
-              <span className=" font-bold">{cartData.length}</span>-Items
+              <span className=" font-bold">{cart.length}</span>-Items
             </p>
           </span>
         </NavLink>
