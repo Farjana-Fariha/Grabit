@@ -1,12 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import EstimateDropdown from "./EstimateDropdown/EstimateDropdown";
 import CountryDropdown from "./CountryDropdown/CountryDropdown";
 import ProvinceDropdown from "./ProvinceDropdown/ProvinceDropdown";
 import ZipCode from "./ZipCode/ZipCode";
 import TotalPrice from "./TotalPrice/TotalPrice";
+import {CartContext} from '../Cart.jsx'
 
 const Summary = () => {
-  
+  const {ItemsTotal} = useContext(CartContext)
   return (
     <aside className=" p-4 bg-[#F8F8FB] border border-[#EEEEEE] rounded-md drop-shadow-md basis-[528px]">
       <h4 className=" font-bold text-[20px] leading-[1.2] t-hue-dark pb-[10px]">

@@ -10,7 +10,7 @@ export const AllDataContext = createContext(null);
 const Root = () => {
   const [cartQuantity, setCartQuantity] = useState(getCartData().length);
   const [itemQuantity, setItemQuantity] = useState(0);
-  const [itemId, setItemId] = useState(null)
+  const [itemId, setItemId] = useState()
   // Data to show item quantity
   let getCartQuantity = (itemId,itemQuantity) => {
     setCartQuantity(getCartData().length);

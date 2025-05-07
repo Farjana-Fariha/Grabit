@@ -24,10 +24,10 @@ const AddToCart = ({ id, toast }) => {
     const exist = allCartId.find((item) => item.id == currId);
     if (!exist) {
       toast("Added to Cart");
+    saveCartData(currId,quantity);
     } else {
       toast("Already added to Cart");
     }
-    saveCartData(currId,quantity);
   };
   return (
     <div className="addToCart mt-10 flex items-center gap-[10px]">

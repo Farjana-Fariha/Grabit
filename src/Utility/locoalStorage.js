@@ -9,7 +9,7 @@ const saveCartData =(currId, quantity = 1)=>{
    const cartData = getCartData();
    const exist = cartData.find(item => item.id == currId)
    if(exist){
-      exist.quantity += quantity;
+      exist.quantity = quantity;
    }else{
       cartData.push({id:currId, quantity});
    }
