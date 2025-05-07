@@ -1,44 +1,50 @@
 [
-   {
-     "id": 1,
-     "icon": "CategoryImg/category-1.svg",
-     "category_name": "Fruits",
-     "tag": "10%",
-     "quantity": 320
-   },
-   {
-     "id": 2,
-     "icon": "CategoryImg/category-2.svg",
-     "category_name": "Vegetables",
-     "tag": "15%",
-     "quantity": 548
-   },
-   {
-     "id": 3,
-     "icon": "CategoryImg/category-3.svg",
-     "category_name": "Dairy & Milk",
-     "tag": "18%",
-     "quantity": 48
-   },
-   {
-     "id": 4,
-     "icon":"CategoryImg/category-4.svg",
-     "category_name": "Snack & Spice",
-     "tag": "20%",
-     "quantity": 59
-   },
-   {
-     "id": 5,
-     "icon": "CategoryImg/category-5.svg",
-     "category_name": "Juice & Drinks",
-     "tag": "",
-     "quantity": 845
-   },
-   {
-     "id": 6,
-     "icon": "CategoryImg/category-1.svg",
-     "category_name": "Juice & Drinks",
-     "tag": "25%",
-     "quantity": 845
-   }
- ]
+  {
+    "id": 1,
+    "icon": "CategoryImg/category-1.svg",
+    "category_name": "Fruits",
+    "category": "fruits",
+    "tag": "10%",
+    "quantity": 320
+  },
+  {
+    "id": 2,
+    "icon": "CategoryImg/category-2.svg",
+    "category_name": "Vegetables",
+    "category": "vegetables",
+    "tag": "15%",
+    "quantity": 548
+  },
+  {
+    "id": 3,
+    "icon": "CategoryImg/category-3.svg",
+    "category_name": "Dairy & Milk",
+    "category": "beverage",
+    "tag": "18%",
+    "quantity": 48
+  },
+  {
+    "id": 4,
+    "icon": "CategoryImg/category-4.svg",
+    "category_name": "Snack & Spice",
+    "category": "food",
+    "tag": "20%",
+    "quantity": 59
+  },
+  {
+    "id": 5,
+    "icon": "CategoryImg/category-5.svg",
+    "category_name": "Beverage",
+    "category": "fruits",
+    "tag": "",
+    "quantity": 845
+  },
+  {
+    "id": 6,
+    "icon": "CategoryImg/category-1.svg",
+    "category_name": "Juice & Drinks",
+    "category": "juice-drinks",
+    "tag": "25%",
+    "quantity": 845
+  }
+]

@@ -6,7 +6,7 @@ import Root from "./Root";
 import Home from "./Pages/Home";
 import ProductPage from "./Pages/ProductPage/ProductPage";
 import Cart from "./Pages/Cart/Cart";
-// import Cart from "./Pages/Cart/Cart";
+import CategoryPage from "./Pages/CategoryPage/CategoryPage";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,8 +15,8 @@ createRoot(document.getElementById("root")).render(
      <Route path="/" element={<Root></Root>}>
       <Route path="/" element={<Home></Home>}></Route>
       <Route path="/product-page/:id" element={<ProductPage></ProductPage>}></Route>
-      <Route path="/cart" element={<Cart></Cart> }></Route>
-      
+      <Route path="/cart" element={<Cart></Cart> }></Route> 
+      <Route path="/category/:category-name" element={<CategoryPage></CategoryPage>}></Route> 
      </Route>
     </Routes>
     </BrowserRouter>

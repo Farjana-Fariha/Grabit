@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Category from "../Category/Category";
 
 // Import Swiper React components
@@ -24,8 +25,8 @@ const Categories = () => {
   }, []);
   return (
     <section className="section-container section-gap flex flex-wrap justify-center gap-x-5 ">
-      {categories.map((category) => (
-          <Category data={category}></Category>
+      {categories.map((category, index) => (
+          <Link to={`/category/${category.category}`} key={index}><Category  data={category}></Category></Link>
       ))}
     </section>
   );

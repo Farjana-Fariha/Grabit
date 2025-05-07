@@ -2,7 +2,7 @@
   {
     "id": 1,
     "img": "Items/item1.png",
-    "category": "Dried Fruits",
+    "category": "fruits",
     "item_name": "Mixed Nuts Berries Pack",
     "rating": 4.5,
     "previous_price": 6.00,
@@ -16,7 +16,7 @@
   {
     "id": 2,
     "img": "Items/item2.png",
-    "category": "Cookies",
+    "category": "foods",
     "item_name": "Multi Grain Combo Cookies",
     "rating": 4.5,
     "previous_price": 3.00,
@@ -30,7 +30,7 @@
   {
     "id": 3,
     "img": "Items/item3.png",
-    "category": "Foods",
+    "category": "foods",
     "item_name": "Fresh Mango Juice Pack",
     "rating": 4,
     "previous_price": 5.00,
@@ -44,7 +44,7 @@
   {
     "id": 4,
     "img": "Items/item4.png",
-    "category": "Dried Fruits",
+    "category": "fruits",
     "item_name": "Dates Value Fresh Pouch",
     "rating": 4.5,
     "previous_price": 8.00,
@@ -58,7 +58,7 @@
   {
     "id": 5,
     "img": "Items/item5.png",
-    "category": "Foods",
+    "category": "food",
     "item_name": "Stick Fiber Masala Magic",
     "rating": 4.5,
     "previous_price": 5.00,
@@ -72,7 +72,7 @@
   {
     "id": 6,
     "img": "Items/item6.png",
-    "category": "Dried Fruits",
+    "category": "fruits",
     "item_name": "Natural Hub Cherry Karonda",
     "rating": 4.5,
     "previous_price": 5.00,
@@ -86,7 +86,7 @@
   {
     "id": 7,
     "img": "Items/item7.png",
-    "category": "Foods",
+    "category": "food",
     "item_name": "Mango Juice Pack",
     "rating": 4.5,
     "previous_price": 3.20,
@@ -100,7 +100,7 @@
   {
     "id": 8,
     "img": "Items/item8.png",
-    "category": "Tubers",
+    "category": "vegetable",
     "item_name": "Organic Ginger Pack",
     "rating": 4.5,
     "previous_price": 4.20,
@@ -114,7 +114,7 @@
   {
     "id": 9,
     "img": "Items/item9.png",
-    "category": "Foods",
+    "category": "fruits",
     "item_name": "Enjoy Hub Cherry Karonda",
     "rating": 4.5,
     "previous_price": 5.00,
@@ -128,7 +128,7 @@
   {
     "id": 10,
     "img": "Items/item10.png",
-    "category": "Fresh Fruit",
+    "category": "fruits",
     "item_name": "Fresh Mango Juice Pack",
     "rating": 4.5,
     "previous_price": 3.20,
