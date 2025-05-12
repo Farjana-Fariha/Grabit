@@ -1,13 +1,17 @@
-import {useContext} from 'react';
+import {useContext, useEffect} from 'react';
 import { AllDataContext } from '../../../../Root';
 
-const SidebarCategory = ({categoryName}) => {
+const SidebarCategory = ({categoryName, tagsName}) => {
+
    const {categories} = useContext(AllDataContext);
    const currentCategory = categories.find(category =>  category.category == categoryName)
+   useEffect(()=> {
+      currentCategory && tagsName(currentCategory.subCategory)
+   },[currentCategory])
    return (
       <div className=' bg-[#F8F8FB] p-4 rounded-md '>
-         <h4 className="font-semibold text-[17px] leading-[1.2] t-hue-dark pr-[260px] pb-[12px]">Category</h4>
-         <hr className='text-[#EEEEEE]'/>
+         <h4 className="font-semibold text-[17px] leading-[1.2] t-hue-dark pr-[260px] ">Category</h4>
+         <hr className='text-[#EEEEEE] mt-[12px]'/>
                {
                  currentCategory && (currentCategory.subCategory.map((subCategory, index) => (
                      <div key={index} className='flex gap-3 py-[12px]'>

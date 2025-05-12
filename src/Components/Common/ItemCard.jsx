@@ -1,5 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Ratings from "./Ratings";
 
 const ItemCard = ({ itemData }) => {
   const {
@@ -10,6 +11,7 @@ const ItemCard = ({ itemData }) => {
     rating,
     previous_price,
     current_price,
+    
   } = itemData;
 
   return (
@@ -26,26 +28,7 @@ const ItemCard = ({ itemData }) => {
           <p className="t-hue-dark text-[clamp(14px,2vw,14px)] font-normal leading-[1.2] tracking-[0.16px]">
             {item_name}
           </p>
-          <ul className="flex gap-x-1">
-            <li>
-              <FaStar className="w-3 text-[#F27D0C]"></FaStar>
-            </li>
-            <li>
-              <FaStar className="w-3 text-[#F27D0C]"></FaStar>
-            </li>
-            <li>
-              <FaStar className="w-3 text-[#F27D0C]"></FaStar>
-            </li>
-            <li>
-              <FaStar className="w-3 text-[#F27D0C]"></FaStar>
-            </li>
-            <li>
-              <FaStar className="w-3 text-[#F27D0C]"></FaStar>
-            </li>
-            <li>
-              <FaStar className="w-3 text-[#F27D0C]"></FaStar>
-            </li>
-          </ul>
+         <Ratings rating={rating}></Ratings>
           <p className="t-hue-dark text-[clamp(14px,2vw,14px)] font-bold leading-[1.5] tracking-[0.32px]">
             ${current_price}
             <del className="t-hue-base font-normal ps-[6.64px]">

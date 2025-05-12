@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import ProductPageTab from "./ProductPageTab/ProductPageTab";
 import AddToCart from "./AddToCart/AddToCart";
 import { ToastContainer, toast } from 'react-toastify';
-import { FaStar } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import WeightBtn from "./WeightBtn/WeightBtn";
 import ProductShowcase from "./ProductShowcase/ProductShowcase";
+import Ratings from "../../Components/Common/Ratings";
 
 const ProductPage = () => {
   const [item, setItem] = useState([]);
@@ -40,8 +40,9 @@ const ProductPage = () => {
               <p className="font-medium text-[22px] t-hue-dark leading-[1.59] tracking-[0.32px]">
                 {item.item_name}
               </p>
+              {/* ---------------------------------------------------------------------------------- */}
               <div className="ratings pt-[20px] pb-[33px] flex items-center">
-                <ul className="flex gap-x-1">
+                {/* <ul className="flex gap-x-1">
                   {item.rating ? (
                     [...Array(5)].map((_, index) => {
                       const ratingValue = item.rating;
@@ -62,13 +63,14 @@ const ProductPage = () => {
                   ) : (
                     <p>No rating available</p>
                   )}
-                </ul>
-
+                </ul> */}
+              <Ratings rating={item.rating}></Ratings>
                 <p className="font-normal text-[14px] t-hue-light leading-[1.42] tracking-[0.32px]">
                   <span className="text-[18px] pl-4">|</span>{" "}
                   <span>{item.rating}</span> Ratings
                 </p>
               </div>
+              {/* ---------------------------------------------------------------------------------- */}
               <div className="price flex justify-between">
                 <div className="wrapp flex items-center gap-[15px]">
                   <p className=" font-semibold text-[22px] t-hue-dark leading-[1.45] ">
