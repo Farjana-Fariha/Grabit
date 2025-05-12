@@ -1,6 +1,9 @@
-import  { useEffect, useState } from "react";
+import  { useContext } from "react";
 import { Link } from "react-router-dom";
 import Category from "../Category/Category";
+import { AllDataContext } from "../../../Root";
+
+
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,15 +17,7 @@ import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper/modules";
 
 const Categories = () => {
-  const [categories, setCategories] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("/categories.json");
-      const data = await response.json();
-      setCategories(data);
-    };
-    fetchData();
-  }, []);
+  const {categories} = useContext(AllDataContext) 
   return (
     <section className="section-container section-gap flex flex-wrap justify-center gap-x-5 ">
       {categories.map((category, index) => (

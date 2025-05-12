@@ -1,5 +1,5 @@
 const Category = ({ data }) => {
-  const {icon, category_name, quantity, tag} = data
+  const {icon, category, quantity, tag} = data
 
   return (
     <div className="bg-[#E2FDE2] bg-gradient-to-t from-white via-white/100 to-transparent rounded-md p-[15px]">
@@ -14,8 +14,8 @@ const Category = ({ data }) => {
         <div className=" w-10">
           <img src={icon} alt="icon" />
         </div>
-        <h4 className="text-[15px] font-bold tracking-[0.16px] t-hue-dark leading-[1.46] pt-[10px]">
-          {category_name}
+        <h4 className="text-[15px] font-bold tracking-[0.16px] t-hue-dark leading-[1.46] pt-[10px] capitalize">
+          {category}
         </h4>
         <p className="text-[13px] font-light tracking-[0.32px] t-hue-base leading-[2.153]">
           <span>{quantity}</span> Items

@@ -2,49 +2,49 @@
   {
     "id": 1,
     "icon": "CategoryImg/category-1.svg",
-    "category_name": "Fruits",
     "category": "fruits",
     "tag": "10%",
-    "quantity": 320
+    "quantity": 320,
+    "subCategory": ["fresh fruits", "dried fruits", "canned fruits"]
   },
   {
     "id": 2,
     "icon": "CategoryImg/category-2.svg",
-    "category_name": "Vegetables",
     "category": "vegetables",
     "tag": "15%",
-    "quantity": 548
+    "quantity": 548,
+    "subCategory": ["fresh vegetables", "frozen vegetables", "canned vegetables"]
   },
   {
     "id": 3,
     "icon": "CategoryImg/category-3.svg",
-    "category_name": "Dairy & Milk",
-    "category": "beverage",
+    "category": "dairy & milk",
     "tag": "18%",
-    "quantity": 48
+    "quantity": 48,
+    "subCategory": ["milk", "cheese", "yogurt"]
   },
   {
     "id": 4,
     "icon": "CategoryImg/category-4.svg",
-    "category_name": "Snack & Spice",
-    "category": "food",
+    "category": "snack & spice",
     "tag": "20%",
-    "quantity": 59
+    "quantity": 59,
+    "subCategory": ["chips", "nuts", "spices"]
   },
   {
     "id": 5,
     "icon": "CategoryImg/category-5.svg",
-    "category_name": "Beverage",
-    "category": "fruits",
+    "category": "bakery",
     "tag": "",
-    "quantity": 845
+    "quantity": 845,
+    "subCategory": ["bread", "pastries", "cakes"]
   },
   {
     "id": 6,
-    "icon": "CategoryImg/category-1.svg",
-    "category_name": "Juice & Drinks",
+    "icon": "CategoryImg/category-6.svg",
     "category": "juice-drinks",
     "tag": "25%",
-    "quantity": 845
+    "quantity": 845,
+    "subCategory": ["fruit juices", "soft drinks", "energy drinks"]
   }
 ]
